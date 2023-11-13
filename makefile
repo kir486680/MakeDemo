@@ -33,4 +33,4 @@ lint:
 all: env test run clean
 #"Don't look for files named env, test, or clean; just run the commands I've specified when these targets are invoked."
 #Makes it clear that these are meant as commands, and not file names
-.PHONY: env test clean
+.PHONY: env test clean lint run all 
