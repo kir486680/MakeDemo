@@ -1,6 +1,4 @@
-# Makefile for a Python project
-
-# Target: install
+# Target: env
 # Prerequisite: requirements.txt should exist
 # Recipe: Commands to create a virtual environment and install dependencies
 env: requirements.txt
@@ -31,6 +29,7 @@ lint:
 	pylint main.py
 
 all: env test run clean
+
 #"Don't look for files named env, test, or clean; just run the commands I've specified when these targets are invoked."
 #Makes it clear that these are meant as commands, and not file names
 .PHONY: env test clean lint run all 

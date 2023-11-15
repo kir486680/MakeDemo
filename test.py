@@ -1,6 +1,8 @@
 import numpy as np
 import main
 
+#Test the functions in main.py with sample inputs
+
 def test_multiply():
     a = np.array([1, 2, 3])
     b = np.array([4, 5, 6])
